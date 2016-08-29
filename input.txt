@@ -1,0 +1,26 @@
+<define>
+	
+	<input>
+		i = a-z A-Z
+		d= 0-9
+		.
+	</input>
+	
+	<state>
+		id int s2 real dump
+	</state>
+
+	<accept>
+		id int real
+	</accept>
+	
+	<FATable>
+		0        i    d    .
+		start   id   int  dump
+		id      id   id   dump
+		int     dump int  s2
+		s2      dump real dump
+		real    dump real dump
+	</FATable>
+	
+</define>
